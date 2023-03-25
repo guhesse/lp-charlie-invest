@@ -100,7 +100,7 @@ header {
     justify-content: center;
 }
 
-.title-section{
+.title-section {
     padding: 150px 0 50px 0;
 }
 
@@ -109,7 +109,7 @@ header {
     flex-direction: row;
     gap: 10px;
     padding: 0;
-    width: 90%;
+    width: 95%;
 }
 
 /*.box-city{
@@ -118,44 +118,43 @@ header {
     position: relative;
 }*/
 
-.box-city{
+.box-city {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 50vh;
-    border-radius: 50px;
     color: #fff;
     cursor: pointer;
     flex: 0.5;
-    margin: 10px;
+    margin: 0px;
     position: relative;
-    transition: flex 500ms cubic-bezier(.39,.08,.65,.95);
+    transition: flex 500ms cubic-bezier(.39, .08, .65, .95);
 }
 
-.box-city.active{
+.box-city.active {
     flex: 1.5;
 
 }
 
-#sao-paulo.photo{ 
+#sao-paulo.photo {
     background: linear-gradient(to top, #0c0c0cba, #2b2a2acc), url('https://images.unsplash.com/photo-1629984558586-3f27a5266a47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background 500ms cubic-bezier(.39,.08,.65,.95);
+    transition: background 500ms cubic-bezier(.39, .08, .65, .95);
 }
 
-.box-city.active #sao-paulo.photo { 
+.box-city.active #sao-paulo.photo {
     background: none, url('https://images.unsplash.com/photo-1629984558586-3f27a5266a47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#porto-alegre.photo{
-    background:linear-gradient(to top, #0c0c0cba, #2b2a2acc), url('https://images.unsplash.com/photo-1631884242450-2ea97e4e7992?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+#porto-alegre.photo {
+    background: linear-gradient(to top, #0c0c0cba, #2b2a2acc), url('https://images.unsplash.com/photo-1631884242450-2ea97e4e7992?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -163,15 +162,15 @@ header {
     background-repeat: no-repeat;
 }
 
-.box-city.active #porto-alegre.photo { 
+.box-city.active #porto-alegre.photo {
     background: none, url('https://images.unsplash.com/photo-1631884242450-2ea97e4e7992?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#rio-de-janeiro.photo{
-    background:linear-gradient(to top, #0c0c0cba, #2b2a2acc), url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+#rio-de-janeiro.photo {
+    background: linear-gradient(to top, #0c0c0cba, #2b2a2acc), url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -179,14 +178,14 @@ header {
     background-repeat: no-repeat;
 }
 
-.box-city.active #rio-de-janeiro.photo { 
+.box-city.active #rio-de-janeiro.photo {
     background: none, url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.name-city{
+.name-city {
     z-index: 1;
     position: absolute;
     top: 45%;
@@ -195,11 +194,11 @@ header {
     color: white;
     text-align: center;
     opacity: 1;
-    transition: all 500ms cubic-bezier(.39,.08,.65,.95);
+    transition: all 500ms cubic-bezier(.39, .08, .65, .95);
     white-space: nowrap;
 }
 
-.box-city.active > .name-city{
+.box-city.active>.name-city {
     z-index: 1;
     position: absolute;
     top: 45%;
@@ -211,10 +210,84 @@ header {
 
 .box-city .photo {
     filter: blur(0px) grayscale(50%);
-    transition: filter 500ms cubic-bezier(.39,.08,.65,.95);
+    transition: filter 500ms cubic-bezier(.39, .08, .65, .95);
     background-color: black;
+}
+
+.box-city.active .photo {
+    filter: none;
+}
+
+
+.vantagens-charlie-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-carrossel {
+    position: relative;
+    width: 80%;
+}
+
+.carrossel-item {
+    display: none;
+    padding: 80px 120px 80px 120px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: none;
   }
 
-  .box-city.active .photo {
-    filter: none;
-  }
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}

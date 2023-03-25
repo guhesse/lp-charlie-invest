@@ -51,14 +51,15 @@
             </div>
         </container>
 
-        
+
     </section>
 
 
     <section class="vantagens-charlie-section">
 
+        <h1 class="title-section">Vantagens de ser um cliente Charlie</h1>
+
         <div class="box-carrossel">
-            <span class="arrow-left"></span>
             <div class="carrossel-item">
                 <h2>Experiência</h2>
                 <p>Experientes em gerir propriedades, oferecemos serviços completos para manter e administrar o seu
@@ -80,8 +81,18 @@
                 <p>Você fica tranquilo sabendo que a nossa administração profissional cuida de todas as tarefas e
                     problemas relacionados ao seu imóvel.</p>
             </div>
-            <span class="arrow-right"></span>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
 
     </section>
 
@@ -146,7 +157,7 @@
 
 
     <script src="./js/script.js"></script>
-    
+
 </body>
 
 </html>
