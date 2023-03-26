@@ -7,7 +7,7 @@
 
 h1 {
     font-family: quincy-cf;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 35px;
 }
 
@@ -65,6 +65,14 @@ header {
     align-items: center;
 }
 
+.title-section {
+    padding: 130px 0 120px 0;
+}
+
+
+/* Header */
+
+
 .logo-header {
     width: 175px;
 }
@@ -93,7 +101,7 @@ header {
 .right-header {
     display: flex;
     width: 50%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .img-header {
@@ -104,15 +112,14 @@ header {
     background-repeat: no-repeat;
 }
 
+
+/* Cities Section */
+
 .cities-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.title-section {
-    padding: 150px 0 120px 0;
 }
 
 .box-cities {
@@ -121,14 +128,8 @@ header {
     gap: 10px;
     padding: 0;
     width: 95%;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
 }
-
-/*.box-city{
-    height: 400px;
-    width: 30vw;
-    position: relative;
-}*/
 
 .box-city {
     background-size: cover;
@@ -230,14 +231,16 @@ header {
 }
 
 
+/* Vantagens Charlie Section */
+
 .vantagens-charlie-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 901px;
-    padding: 100px 0 0 0 ;
+    height: 800px;
+    padding-top: 180px;
 }
 
 .box-carrossel {
@@ -306,10 +309,12 @@ header {
     background-color: #717171;
 }
 
+/*Boa Experiência Section*/
+
 .boa-experiencia-section {
     background-color: #F3F3F3;
     margin-top: 100px;
-    height: 1100px;
+    height: 900px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -345,8 +350,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: auto;
-    height: 1100px;
+    height: 900px;
 }
+
+/*Benefícios Charlie Section*/
 
 .beneficios-charlie-section {
     display: flex;
@@ -363,6 +370,7 @@ header {
     gap: 50px;
     padding: 0 50px;
     position: relative;
+    padding-bottom: 50px;
 }
 
 .item-beneficios{
@@ -375,7 +383,6 @@ header {
     justify-content: center;
     text-align: center;
     position: relative;
-    /*background-color: #707070;*/
 }
 
 .box-item{
@@ -409,7 +416,6 @@ header {
 }
 
 
-
 .item-beneficios > h2 {
     position: absolute;
     top: 25%;
@@ -422,3 +428,62 @@ header {
     width: 90%;
 }
 
+/*Como Se Tornar um Cliente Charlie Section*/
+
+.cliente-charlie-section > .title-section {
+    padding: 0 0 0 0;
+}
+
+.cliente-charlie-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 200px;
+}
+
+.box-itens-cliente{
+    padding-top: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.item-cliente{
+    display: flex;
+    padding: 5px 50px;
+    margin: 10px;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    transition: transform 200ms cubic-bezier(.66,.01,.58,.99);
+}
+
+.item-cliente:hover{
+    border: 1px solid #00CFB4;
+    background-color: #00CFB4;
+    transform: translateY(-5px);
+}
+
+.item-cliente > p {
+    padding-left: 20px;
+}
+
+.item-cliente > .check{
+    font-size: 25px ;
+    color: #00CFB4;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.item-cliente:hover > .check{
+    color: white;
+}
