@@ -121,6 +121,7 @@ header {
     gap: 10px;
     padding: 0;
     width: 95%;
+    padding-bottom: 100px;
 }
 
 /*.box-city{
@@ -236,6 +237,7 @@ header {
     justify-content: center;
     width: 100%;
     height: 901px;
+    padding: 100px 0 0 0 ;
 }
 
 .box-carrossel {
@@ -285,7 +287,8 @@ header {
     text-align: center;
     padding: 10px;
     background: none;
-  }
+    padding: 200px;
+}
 
 .dot {
     cursor: pointer;
@@ -303,9 +306,10 @@ header {
     background-color: #717171;
 }
 
-.boa-experiencia-section{
+.boa-experiencia-section {
     background-color: #F3F3F3;
-    height: 800px;
+    margin-top: 100px;
+    height: 1100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -313,7 +317,7 @@ header {
     position: relative;
 }
 
-.number-experiencia{
+.number-experiencia {
     font-size: 160px;
     font-family: proxima-nova;
     font-weight: 700;
@@ -322,17 +326,17 @@ header {
     margin-block-end: -6%;
 }
 
-.text-boa-experiencia{
+.text-boa-experiencia {
     padding: 0 90px 0px 90px;
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-items: center;
     text-align: center;
-    
+
 }
 
-.text-boa-experiencia > h1 {
+.text-boa-experiencia>h1 {
     width: 100%;
 }
 
@@ -341,5 +345,80 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: auto;
-    height: 800px;
+    height: 1100px;
 }
+
+.beneficios-charlie-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.item-beneficios{
+    width: 400px;
+    height: 500px;
+    gap: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /*background-color: #707070;*/
+}
+
+.box-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #707070;
+    border-radius: 100px;
+    position: absolute;
+    top: -10%;
+    transition: transform 150ms cubic-bezier(.66,.01,.58,.99);
+}
+
+.box-item:hover{
+    border-color: #00CFB4;
+    transform: translateY(-10px);
+}
+
+.box-item:hover .icon-beneficios{
+    height: 80px;
+    fill: #00CFB4;
+}
+
+.icon-beneficios{
+    height: 75px;
+    fill: #707070;
+    transition: fill 150ms cubic-bezier(.66,.01,.58,.99);
+    transition: height 150ms cubic-bezier(.66,.01,.58,.99);
+}
+
+
+
+.item-beneficios > h2 {
+    position: absolute;
+    top: 25%;
+    width: 90%;
+}
+
+.item-beneficios > p {
+    position: absolute;
+    top: 40%;
+    width: 90%;
+}
+
