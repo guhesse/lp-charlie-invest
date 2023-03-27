@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.bricks--section > div {
+    max-width:none;
+   }
+   
+
+section{
+    width: 100vw;
+}
+
+a {
+    color: #00CFB4;
+    text-decoration: none;
+}
 
 h1 {
     font-family: quincy-cf;
@@ -34,8 +47,6 @@ button {
     border: none;
     transition: transform 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
-
-
 }
 
 button:hover {
@@ -64,7 +75,244 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
+
+
+/*Media Queries*/
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+
+    div button {
+        padding: 5px 20px;
+        width: 220px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-family: quincy-cf;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    p {
+        font-family: proxima-nova;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.left-header {
+        width: 100%;
+        padding: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    span.title-header {
+        padding: 30px 0 0 0;
+        font-size: 35px;
+    }
+
+    span.subtitle-header {
+        font-family: proxima-nova;
+        font-size: 1.1em;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    div.right-header {
+        padding-top: 70px;
+        height: 50vh;
+        width: 100%;
+    }
+
+    img.img-header {
+        width: 100%;
+    }
+
+    img.logo-header {
+        width: 175px;
+        padding-top: 5%;
+    }
+
+    h1.title-section {
+        text-align: center;
+        padding: 100px 5% 50px 5%;
+    }
+
+    container.box-cities {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    div.box-city {
+        width: 100%;
+        height: 200px;
+        display: block;
+    }
+
+    div.box-carrossel {
+        width: 100%;
+        padding-bottom: 200px;
+    }
+
+    div.carrossel-item {
+        padding: 0 70px 0 70px;
+        top: -30px;
+        left: 0;
+    }
+
+    .dot-container {
+        padding: 20px;
+    }
+
+    section.vantagens-charlie-section>h1.title-section {
+        text-align: center;
+        padding: 0px 0 50px 0;
+    }
+
+    section.boa-experiencia-section {
+        flex-direction: column-reverse;
+    }
+
+    img#img-boa-experiencia.photo {
+        width: 120%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+
+    container.text-boa-experiencia {
+        padding: 0 40px 350px 40px;
+        width: 100%;
+    }
+
+    container.box-beneficios {
+        flex-direction: column;
+        padding: 0 0 200px 0;
+
+    }
+
+    section.cliente-charlie-section {
+        padding-bottom: 100px;
+    }
+
+    div.item-beneficios {
+        gap: 20px;
+        height: 350px;
+    }
+
+    div.box-item {
+        top: 0;
+    }
+
+    div.item-beneficios>h2 {
+        top: 50%;
+        width: 90%;
+    }
+
+    div.item-beneficios>p {
+        top: 65%;
+        width: 90%;
+    }
+
+    section.cta-formulario-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.cta-formulario-section>.title-section {
+        padding: 80px 5% 20px 5%;
+    }
+
+    section.cta-formulario-section>.title-section>br {
+        display: none;
+    }
+
+    section.cta-formulario-section>.button-div {
+        width: 0%;
+        padding: 0 0 80px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    button.btn-formulario {
+        padding: 5px 20px !important; 
+        width: 250px !important;
+        height: 60px !important;
+        font-size: 20px !important;
+    }
+
+    div.container{
+        padding: 40px 0 0 0;
+    }
+
+    div.accordion button{
+        width: 100%;
+    }
+
+    div.accordion button#accordion-button-1 .accordion-title {
+        position: absolute;
+        top: -20px;
+        width: 80%;
+        padding: 0 0 0 0;
+        margin-bottom: 20px;
+    }
+
+    div.accordion button#accordion-button-2 .accordion-title {
+        position: absolute;
+        top: 0;
+        width: 85%;
+        padding: 20px 0 0 0 
+    }
+    
+    div.accordion button#accordion-button-3 .accordion-title {
+        position: absolute;
+        top: 5px;
+        width: 85%;
+        padding: 0 0 0 0 
+    }
+    
+    div.accordion button#accordion-button-4 .accordion-title {
+        position: absolute;
+        top: 0;
+        width: 90%;
+        padding: 0 0 0 0 
+    }
+    
+    div.accordion button#accordion-button-5 .accordion-title {
+        position: absolute;
+        top: 0;
+        width: 85%;
+        padding: 0 0 0 0 
+    }
+
+    div.accordion .accordion-content p {
+        font-weight: 400;
+        margin: 1em 0;
+    }
+    
+    div.accordion button[aria-expanded='true']+.accordion-content {
+        opacity: 1;
+        max-height: 12em;
+    }
+}
+
+
 
 .title-section {
     padding: 130px 0 120px 0;
@@ -107,12 +355,11 @@ header {
 
 .img-header {
     width: 100vw;
-    background-image: url('https://source.unsplash.com/random');
+    background-image: url('https://contentstatic.blob.core.windows.net/prd/mkt_lp_charlie_invest/foto-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 /* Cities Section */
 
@@ -239,7 +486,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 800px;
     padding-top: 180px;
 }
@@ -249,11 +496,11 @@ header {
     width: 80%;
     margin: auto;
     padding-bottom: 200px;
-  }
-  
-  .carrossel-item {
+}
+
+.carrossel-item {
     display: none;
-    padding: 80px 120px 80px 120px;
+    padding: 0px 120px 0px 120px;
     text-align: center;
     position: absolute;
     top: 0;
@@ -262,26 +509,27 @@ header {
     bottom: 0;
     animation-duration: 1s;
     animation-timing-function: ease;
-  }
-  
+}
 
-  @keyframes fade {
+
+@keyframes fade {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  .carrossel-item {
+}
+
+.carrossel-item {
     display: block;
     animation-name: fade;
     animation-fill-mode: forwards;
-  }
-  
-  .prev,
-  .next {
+}
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -298,29 +546,29 @@ header {
     animation-duration: 1s;
     animation-timing-function: ease;
     transition: background-color 300ms cubic-bezier(.39, .08, .65, .95), color 300ms cubic-bezier(.39, .08, .65, .95);
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparência */
-  .prev:hover,
-  .next:hover {
+}
+
+/* Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparência */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-  }
-  
-  /* Contêiner de ponto / bala / indicador */
-  .dot-container {
+}
+
+/* Contêiner de ponto / bala / indicador */
+.dot-container {
     text-align: center;
     padding: 10px;
     background: none;
-    padding: 200px;
-  }
-  
-  .dot {
+    padding: 20px;
+}
+
+.dot {
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -329,12 +577,13 @@ header {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active,
-  .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
+}
+
 /*Boa Experiência Section*/
 
 .boa-experiencia-section {
@@ -394,7 +643,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 0 50px;
+    padding: 100px 50px;
     position: relative;
     padding-bottom: 50px;
 }
@@ -470,7 +719,7 @@ header {
 }
 
 .box-itens-cliente {
-    padding-top: 75px;
+    padding-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -481,7 +730,7 @@ header {
 
 .item-cliente {
     display: flex;
-    padding: 5px 50px;
+    padding: 15px 50px;
     margin: 10px;
     border: 1px solid #D4D4D4;
     border-radius: 8px;
@@ -513,7 +762,7 @@ header {
     font-size: 25px;
     color: #00CFB4;
     position: absolute;
-    top: 25px;
+    top: 18px;
     left: 15px;
 }
 
@@ -522,6 +771,14 @@ header {
 }
 
 .item-cliente.active>.check {
+    color: white;
+}
+
+.item-cliente:hover>p>a.cta-20-unidades {
+    color: white;
+}
+
+.item-cliente.active>p>a.cta-20-unidades {
     color: white;
 }
 
@@ -573,15 +830,61 @@ header {
     animation-fill-mode: forwards;
 }
 
+/*CTA Formulário Section*/
+
+.cta-formulario-section {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 50% [col-start]);
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #F3F3F3;
+}
+
+.cta-formulario-section>.title-section {
+    padding-left: 300px;
+}
+
+.cta-formulario-section>.button-div {
+    width: 30%;
+    padding-right: 300px;
+}
+
+button.btn-formulario {
+    background-color: black;
+    font-family: proxima-nova;
+    color: white;
+    padding: 10px 20px;
+    width: 300px;
+    height: 80px;
+    font-size: 25px;
+    border: none;
+    transition: transform 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+button:hover.btn-formulario {
+    border: 2px solid black;
+    background-color: #F3F3F3;
+    color: black;
+    transform: translateY(-5px);
+}
+
+button:active.btn-formulario {
+    transform: translateY(-2px);
+    background-color: #00CFB4;
+}
+
 /* FAQ */
 
 .faq-section {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
+    padding-bottom: 100px;
 }
 
 .faq-section>.title-section {
@@ -596,6 +899,7 @@ header {
 }
 
 .accordion .accordion-item {
+    margin-top: 30px;
     border-bottom: 1px solid #e5e5e5;
 }
 
